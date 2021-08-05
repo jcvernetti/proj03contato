@@ -6,6 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresa XYZ</title>
+
+    <style>
+        .TextoArea {
+            resize: none;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(230, 219, 219);
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        @keyframes example {
+        0%   {background-color: rgb(238, 10, 10);}
+        25%  {background-color: yellow;}
+        50%  {background-color: blue;}
+        75%  {background-color: green;}
+        100% {background-color: rgb(156, 126, 126);}
+        }
+
+        
+        
+    </style>
 </head>
 
 <body>
@@ -69,7 +90,8 @@
         <!-- Caixa de texto de multiplas linhas -->
         <legend>Seu Comentário (até 100 caracteres): </legend>
 
-        <textarea name="nmTextArea" id="idTextArea" cols="30" rows="4" minlength="10" maxlength="100" placeholder="Deixe aqui seu comentário"></textarea>
+        <textarea class="TextoArea" name="nmTextArea" id="idTextArea" cols="30" rows="4" minlength="10" maxlength="100"
+            placeholder="Deixe aqui seu comentário"></textarea>
         <br>
         <button type="submit">BT Enviar</button>
     </form>
